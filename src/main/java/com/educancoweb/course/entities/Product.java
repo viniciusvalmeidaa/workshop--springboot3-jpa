@@ -38,6 +38,8 @@ public class Product implements Serializable {
     
 	@OneToMany(mappedBy = "id.product")
     private Set<OrderItem> items =  new HashSet<>();
+	
+
 //    ---------------------------- fim declaração variaveis
     
 
@@ -110,8 +112,10 @@ public class Product implements Serializable {
 		}
 		return set;
 	}
+
 	
 //	---------- fim get/set
+
 
 	@Override
 	public int hashCode() {
