@@ -76,6 +76,7 @@ public class Order implements Serializable {
 		this.client = client;
 	}
 	
+	
 
 	public OrderStatus getOrderStatus() {
 		return OrderStatus.valueOf(orderStatus)	;

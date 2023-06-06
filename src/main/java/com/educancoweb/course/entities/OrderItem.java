@@ -21,7 +21,7 @@ public class OrderItem implements Serializable{
 	private Integer quantity;
 	private Double price;
 	
-	
+//	---------- fim declaração variaveis
 	public OrderItem() {
 		super();
 	}
@@ -33,6 +33,7 @@ public class OrderItem implements Serializable{
 		this.quantity = quantity;
 		this.price = price;
 	}
+//	------------- inicio get/set
 	@JsonIgnore
 	public Order getOrder() {
 		return id.getOrder();
@@ -60,7 +61,7 @@ public class OrderItem implements Serializable{
 		this.price = price;
 	}
 
-	
+//	------------------------ fim get/set
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
